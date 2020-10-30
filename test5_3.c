@@ -14,7 +14,7 @@ int pBuy(product* p,int,int);
 int main()
 {
     int money,rate;
-    const product list[6]={{"PMP",WON,{600000,}},{"MP3",WON,{153000,}},{"SmartPhone",DOLLAR,{.dollar=520.40}},{"TV",DOLLAR,{.dollar=430.20}},{"Navigator",WON,{350000,}},{"Laptop",DOLLAR,{.dollar=1950.00}}};
+    const product list[6]={{"PMP",WON,{.won=600000}},{"MP3",WON,{.won=153000}},{"SmartPhone",DOLLAR,{.dollar=520.40}},{"TV",DOLLAR,{.dollar=430.20}},{"Navigator",WON,{.won=350000}},{"Laptop",DOLLAR,{.dollar=1950.00}}};
     printf("보유금액과 환율을 입력하세요.\n");
     printf("보유금액: ");
     scanf("%d",&money);
