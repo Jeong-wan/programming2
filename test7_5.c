@@ -22,12 +22,12 @@ int main()
     ch=getch();
     if(ch=='a')
     {
-	printf("%c\n",ch);
+	putchar(ch);
 	printf("Good\n");
     }
     else
     {
-	printf("%c\n",ch);
+	putchar(ch);
 	printf("Bad\n");
     }
     return 0;
