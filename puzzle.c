@@ -31,7 +31,19 @@ int main(int argc, char**argv)
     {
 	case 1:
 	    system("clear");
-	    print(puzzle);
+	    while(1)
+	    {
+		print(puzzle);
+		printf("\n\t\t\t\t\t\t\t\t\t\t\t\t [종료: 'esc']");
+		inputKey(puzzle);
+		if(endGame(puzzle))
+		{
+		    printf("\n\n\n\n\n\t\t\t\t\t\t\t\t\t\t\t\t   축하합니다");
+		    print(puzzle);
+		    sleep(3);
+		    exit(-1);
+		}
+	    }
 	    break;
 	case 2:
 	    system("clear");
