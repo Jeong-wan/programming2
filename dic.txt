@@ -1,0 +1,7 @@
+lion 사자
+monkey 원숭이
+tiger 호랑이
+elephant 코끼리
+mouse 쥐
+dog 개
+cat 고양이

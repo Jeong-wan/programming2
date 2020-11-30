@@ -13,7 +13,7 @@ int main(){
     FILE *fp;
     int check;
     int i=0;
-    if((fp=fopen("employee.txt","wb"))==NULL)
+    if((fp=fopen("employee.txt","w"))==NULL)
     {
 	printf("write error");
 	exit(-1);
@@ -21,9 +21,10 @@ int main(){
     worker* w=(worker*)malloc(sizeof(worker)*EMPLOYEE);
     for(int i=0;i<HOW_MANY;i++)
     {
-        scanf("%s %d %d %d",w[i].name,&w[i].id,&w[i].age,&w[i].salary);
+	scanf("%s %d %d %d",w[i].name,&w[i].id,&w[i].age,&w[i].salary);
+       fprintf(fp,"%s %d %d %d",w[i].name,w[i].id,w[i].age,w[i].salary);
     }
-    fwrite(w,sizeof(worker),HOW_MANY,fp);
+   // fwrite(w,sizeof(worker),HOW_MANY,fp);
     fclose(fp);
     
     return 0;
