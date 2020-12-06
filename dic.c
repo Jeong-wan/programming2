@@ -32,7 +32,6 @@ int main()
 	head=head->next;
     }
     int node=nodeNum(temp);
-    printf("%d\n\n",node);
     ptr=(LINK*)malloc(sizeof(LINK)*node);
     cur=temp2;
     for(int i=0;i<node;i++)
@@ -62,11 +61,6 @@ int main()
     }
     cur->next=NULL;
 
-    while(temp2!=NULL)
-    {
-	printf("%s %s\n",temp2->eng,temp2->kor);
-	temp2=temp2->next;
-    }
     while(1)
     {
        printf("1)영어 단어 맞추기\n2) 프로그램 종료\n");
@@ -96,7 +90,6 @@ void wordTest(LINK head,int node)
     char input[15];
     LINK cursor=head;
     double score=100.0/node;
-    printf("score %f\n",score);
     double sum=0.0;
     while(cursor!=NULL)
     {
@@ -117,7 +110,7 @@ void wordTest(LINK head,int node)
 	}
 	cursor=cursor->next;
     }
-    printf("score: %f\n",sum);
+    printf("score: %.1f\n",sum);
 }
 int nodeNum(LINK head)
 {

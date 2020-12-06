@@ -5,3 +5,7 @@ elephant 코끼리
 mouse 쥐
 dog 개
 cat 고양이
+alligator 악어
+puppy 강아지
+kitten 아기고양이
+snake 뱀
